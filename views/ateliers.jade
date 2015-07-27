@@ -3,10 +3,13 @@ include ./layouts/head
 body
 
   include ./layouts/topnav
-
+  
+  h3 Informations sur les inscrits et dates choisies
+  .atelier
   ul
   each inscrit in inscrits
     li
+      .enfant-info
       |Identifiant de l'enfant : 
       = inscrit.id 
       br
@@ -19,6 +22,7 @@ body
       |Age de l'enfant : 
       = inscrit.age
       br
+      .representant-info
       |Nom du représenant légal : 
       = inscrit.nom_representant
       br
@@ -31,6 +35,7 @@ body
       |Téléphone : 
       = inscrit.telephone
       br
+      .choix
       |Date(s) choisie(s) : 
       = inscrit.date
       br
