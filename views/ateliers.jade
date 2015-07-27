@@ -8,23 +8,33 @@ body
   each inscrit in inscrits
     li
       |Identifiant de l'enfant : 
-      = inscrit.id
+      = inscrit.id 
+      br
       |Nom de l'enfant : 
       = inscrit.nom_enfant
+      br
       |Prénom de l'enfant : 
       = inscrit.prenom_enfant
+      br
       |Age de l'enfant : 
       = inscrit.age
+      br
       |Nom du représenant légal : 
       = inscrit.nom_representant
+      br
       |Prénom du représentant légal : 
       = inscrit.prenom_representant
+      br
       |Mail : 
       = inscrit.mail
+      br
       |Téléphone : 
       = inscrit.telephone
+      br
       |Date(s) choisie(s) : 
       = inscrit.date
+      br
       |Autorisation photo : 
       = inscrit.photo 
+      br
       a(href="/delete/#{inscrit.id}") Désinscrire
