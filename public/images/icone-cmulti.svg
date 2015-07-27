@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4216" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="50mm" width="50mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 177.16535 177.16535">
+ <metadata id="metadata4221">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0 -875.2)">
+  <rect id="rect4158" height="69.385" width="85.767" y="955.62" x="47.434"/>
+  <path id="path4160" transform="matrix(1.0859 0 0 .61474 -348.52 603.06)" d="m458.71 590.76-56.107-0.37127-56.107-0.37126 28.375-48.405 28.375-48.405 27.732 48.776z"/>
+  <rect id="rect4158-7" height="65.278" width="77.292" y="954.54" x="51.478" fill="#fff"/>
+  <path id="path4160-6" transform="matrix(.95706 0 0 .53387 -296.44 648.36)" fill="#fff" d="m458.71 590.76-56.107-0.37127-56.107-0.37126 28.375-48.405 28.375-48.405 27.732 48.776z"/>
+  <text id="text4332" style="word-spacing:0px;letter-spacing:0px" font-weight="500" xml:space="preserve" transform="scale(.99527 1.0048)" line-height="125%" font-size="93.909px" y="1001.7095" x="55.595692" font-family="&apos;URW Chancery L&apos;" font-style="italic" fill="#000000"><tspan id="tspan4334" x="55.595692" y="1001.7095">m</tspan></text>
+  <text id="text4336" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" transform="scale(.99527 1.0048)" line-height="125%" font-size="93.909px" y="955.98163" x="73.059738" font-family="&apos;Ume Gothic S5&apos;" fill="#000000"><tspan id="tspan4338" rotate="0 0 0 0" font-size="70px" font-style="italic" dx="-10.119997" y="955.98163" x="73.059738" font-family="&apos;URW Bookman L&apos;">...</tspan></text>
+ </g>
+</svg>
