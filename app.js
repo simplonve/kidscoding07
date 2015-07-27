@@ -59,9 +59,12 @@ app.get('/ateliers', function(req, res){
   });
 });
 
-app.delete('/delete/:inscrit_id', function(req, res){
-    Inscription.remove({__id: req.params.inscrit_id},
-    res.redirect('/ateliers'));
+app.get('/delete/:inscrit_id', function(req, res){
+  Inscription.findById(req.params.inscrit_id, function(err, inscrit){
+    inscrit.remove(function ( err, inscrit ){
+      res.redirect('/ateliers');
+    });
+  });
 });
 
 app.listen(3000);
