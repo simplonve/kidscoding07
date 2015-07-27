@@ -1,175 +1,125 @@
 doctype html(lang='fr')
 head
-    meta(charset='utf-8')
-           
-    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-           
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui')
-           
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-           
-    meta(http-equiv='content-language', content='fr')
-           
-    meta(name='language', content='fr')
-         
-         
-    title KidsCoding 07
-         
-    link(rel='stylesheet', href='css/font-awesome.min.css')
-         
-    link(rel='stylesheet', href='css/style.css')
-         
-    script(src='js/jquery-1.11.3.min.js')
-     
-     
-  body
-    .kc-topnav
-      .kc-left_topnav
-        img.kc-openmenu(src='images/icone-hamburg-topbar.svg', alt='Icone Menu')
-             
-      .kc-center_topnav
-        a(href='/')
-          img(src='images/logo-kc07.svg', alt='Logo Kids Coding')
-             
-      ul.kc-ul_topnav
-        li.kc-li_topnav
-          a(href='/ateliers') Ateliers
-                 
-        li.kc-li_topnav
-          a(href='/inscription') Inscription
-         
-    .kc-menu
-      .kc-right_menu
-        i.fa.fa-2x.fa-times.kc-closemenu
-             
-      ul.kc-ul_menu
-        li.kc-li_menu
-          i.fa.fa-2x.fa-home
-                     
-          a(href='/') Accueil
-                 
-        li.kc-li_menu
-          i.fa.fa-2x.fa-pencil
-                     
-          a(href='/inscription') Inscription
-                 
-        li.kc-li_menu
-          i.fa.fa-2x.fa-desktop
-                     
-          a(href='/ateliers') Ateliers
-         
-    .kc-header
-      .kc-filtre
-        .kc-hamburger
-          img.kc-openmenu(src='images/icone-hamburg.svg', alt='Icone Menu')
-                 
-        .kc-logo
-          img(src='images/logo-kc07.svg', alt='Logo Kids Coding')
-               
-        .kc-accroche
-          h1 Eveiller sa cr&eacute;ativit&eacute; par la programmation.
-               
-        .kc-inscription
-          p Laissez votre enfant s&apos;immerger dans cet univers ludique.
-                   
-          a(href='/inscription') Inscription
-           
-      section.kc-infos
-        .kc-detail
-          .kc-circle
-            img(src='images/icone-heure.svg', alt='Icone Heure')
-                       
-            p 2h
-                   
-          p Tous les mercredis apr&egrave;s midi de 14h &agrave; 16h.
-               
-        .kc-detail
-          .kc-circle
-            img(src='images/icone-age.svg', alt='Icone Age')
-                       
-            p 8+
-                   
-          p Outils adapt&eacute;s aux enfants &agrave; partir de 8ans.
-               
-        .kc-detail
-          .kc-circle
-            img(src='images/icone-cmulti.svg', alt='Icone Lieu')
-                       
-            p
-               St Martin
-               de Valamas
-                   
-          p Au centre multim&eacute;dia de Saint Martin de Valamas.
+  meta(charset='utf-8')     
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')       
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui')     
+  meta(http-equiv='Content-Type', content='text/html; charset=utf-8')    
+  meta(http-equiv='content-language', content='fr')    
+  meta(name='language', content='fr')
           
-           
-      section.kc-bloc.bloc-rouge
-        .kc-bloc_text
-          h1.kc-titre Les horaires
-                   
-          p.kc-description
-             Tous les mercredis de 14h &agrave; 16h Kidscoding07 accueille vos enfants pour d&eacute;couvrir ensemble un univers d&apos;initiation &agrave; la programmation, d&apos;exploration ludique, de construction et d&apos;&eacute;changes.
-                   
-          a(href='/inscription') Inscription
-               
-        .kc-bloc_image
+  title KidsCoding 07
+  
+  link(rel='stylesheet', href='css/font-awesome.min.css')    
+  link(rel='stylesheet', href='css/style.css')
+       
+  script(src='js/jquery-1.11.3.min.js')
+
+body
+  .kc-topnav
+    .kc-left_topnav
+      img.kc-openmenu(src='images/icone-hamburg-topbar.svg', alt='Icone Menu')    
+    .kc-center_topnav
+      a(href='/')
+        img(src='images/logo-kc07.svg', alt='Logo Kids Coding')    
+    ul.kc-ul_topnav
+      li.kc-li_topnav
+        a(href='/ateliers') Ateliers       
+      li.kc-li_topnav
+        a(href='/inscription') Inscription
+
+  .kc-menu
+    .kc-right_menu
+      i.fa.fa-2x.fa-times.kc-closemenu
+    ul.kc-ul_menu
+      li.kc-li_menu
+        i.fa.fa-2x.fa-home
+        a(href='/') Accueil
+      li.kc-li_menu
+        i.fa.fa-2x.fa-pencil
+        a(href='/inscription') Inscription
+      li.kc-li_menu
+        i.fa.fa-2x.fa-desktop
+        a(href='/ateliers') Ateliers
+
+  .kc-header
+    .kc-filtre
+      .kc-hamburger
+        img.kc-openmenu(src='images/icone-hamburg.svg', alt='Icone Menu')       
+      .kc-logo
+        img(src='images/logo-kc07.svg', alt='Logo Kids Coding')
+      .kc-accroche
+        h1 Eveiller sa créativité par la programmation.
+      .kc-inscription
+        p Laissez votre enfant s'immerger dans cet univers ludique.
+        a(href='/inscription') Inscription
+
+    section.kc-infos
+      .kc-detail
+        .kc-circle
           img(src='images/icone-heure.svg', alt='Icone Heure')
+          p 2h
+        p Tous les mercredis après midi de 14h à 16h.
              
-           
-          
-           
-      section.kc-bloc.bloc-blanc
-        .kc-bloc_text
-          h1.kc-titre Les enfants
-                   
-          p.kc-description
-             Avant tout orient&eacute; vers les 8-12 ans, ces ateliers permettent de d&eacute;couvrir la programmation. Chaque outil utilis&eacute; (scratch par exemple) est adapt&eacute; &agrave; leur &acirc;ge. Chacun va &agrave; son rythme. Les enfants d&eacute;veloppent ainsi leur propre logique et font jouer leur imagination pour donner vie &agrave; leurs id&eacute;es.
-               
-        .kc-bloc_image
+      .kc-detail
+        .kc-circle
           img(src='images/icone-age.svg', alt='Icone Age')
+          p 8+
+        p Outils adaptés aux enfants à partir de 8ans.
              
-          
-           
-      section.kc-bloc.bloc-rouge
-        .kc-bloc_text
-          h1.kc-titre Le lieu
-                   
-          p.kc-description
-             Les ateliers se d&eacute;roulent dans le centre multim&eacute;dia de St Martin de Valamas. Cet espace public balis&eacute; pour l&apos;occasion, est &eacute;quip&eacute; d&apos;ordinateurs d&eacute;di&eacute;s pour chaque enfant. Les locaux sont mis &agrave; disposition tous les mercredis apr&egrave;s-midi, en partenariat avec la communaut&eacute; de communes Val&apos;Eyrieux.
-               
-        .kc-bloc_image
+      .kc-detail
+        .kc-circle
           img(src='images/icone-cmulti.svg', alt='Icone Lieu')
-             
-          
+          p
+            | St Martin
+            | de Valamas
+        p Au centre multimédia de Saint Martin de Valamas.
+        
+    section.kc-bloc.bloc-rouge
+      .kc-bloc_text
+        h1.kc-titre Les horaires
+        p.kc-description
+          | Tous les mercredis de 14h à 16h Kidscoding07 accueille vos enfants pour découvrir ensemble un univers d'initiation à la programmation, d'exploration ludique, de construction et d'échanges.
+        a(href='/inscription') Inscription
+      .kc-bloc_image
+        img(src='images/icone-heure.svg', alt='Icone Heure')
            
-      section.kc-bloc.bloc-blanc
-        .kc-bloc_text
-          h1.kc-titre Les outils
-                   
-          p.kc-description
-            a(href='https://scratch.mit.edu', target='_blank') Scratch 
-              est le principal programme utilis&eacute; lors des ateliers du KidsCodin07. Il s&apos;agit d&apos;un langage de programmation con&ccedil;u pour les enfants. Ils peuvent ainsi programmer des m&eacute;dias interactifs comme des histoires, des jeux ou des animations. Avec Scratch, les enfants apprennent &agrave; penser de fa&ccedil;on cr&eacute;ative, &agrave; travailler en collaboration et &agrave; d&eacute;velopper des comp&eacute;tences essentielles pour notre vie moderne.
-               
-        .kc-bloc_image
-          img(src='images/icone-scratch.svg', alt='Icone Outils')
+    section.kc-bloc.bloc-blanc
+      .kc-bloc_text
+        h1.kc-titre Les enfants
+        p.kc-description
+          | Avant tout orienté vers les 8-12 ans, ces ateliers permettent de découvrir la programmation. Chaque outil utilisé (scratch par exemple) est adapté à leur âge. Chacun va à son rythme. Les enfants développent ainsi leur propre logique et font jouer leur imagination pour donner vie à leurs idées.
+      .kc-bloc_image
+        img(src='images/icone-age.svg', alt='Icone Age')
            
-          
-           
-      section.kc-bloc.bloc-rouge
-        .kc-bloc_text
-          h1.kc-titre Les accompagnateurs
-                   
-          p.kc-description
-             5 accompagnateurs, issus de la fabrique sociale de codeurs Simplon.VE, organisent les ateliers. Cet accompagnement individuel permet de guider au mieux l&apos;enfant, lui donne les bases pour qu&apos;il comprenne le fonctionnement et ose ainsi cr&eacute;er sa propre histoire.
-               
-        .kc-bloc_image
-          img(src='images/icone-animat.svg', alt='Icone Accompagnateurs')
-           
-      .kc-footer
-        h1.kc-titre Besoin de plus d&apos;informations
-               
-        form(action='')
-          input(type='text')
-                   
-          textarea(name='infos', id='', cols='30', rows='10')
-           
-      script(src='js/hamburger.js')
+    section.kc-bloc.bloc-rouge
+      .kc-bloc_text
+        h1.kc-titre Le lieu
+        p.kc-description
+          | Les ateliers se déroulent dans le centre multimédia de St Martin de Valamas. Cet espace public balisé pour l'occasion, est équipé d'ordinateurs dédiés pour chaque enfant. Les locaux sont mis à disposition tous les mercredis après-midi, en partenariat avec la communauté de communes Val'Eyrieux.
+      .kc-bloc_image
+        img(src='images/icone-cmulti.svg', alt='Icone Lieu')
+         
+    section.kc-bloc.bloc-blanc
+      .kc-bloc_text
+        h1.kc-titre Les outils
+        p.kc-description
+          a(href='https://scratch.mit.edu', target='_blank')
+            | Scratch est le principal programme utilisé lors des ateliers du KidsCodin07. Il s'agit d'un langage de programmation conçu pour les enfants. Ils peuvent ainsi programmer des médias interactifs comme des histoires, des jeux ou des animations. Avec Scratch, les enfants apprennent à penser de façon créative, à travailler en collaboration et à développer des compétences essentielles pour notre vie moderne.
+      .kc-bloc_image
+        img(src='images/icone-scratch.svg', alt='Icone Outils')
+         
+    section.kc-bloc.bloc-rouge
+      .kc-bloc_text
+        h1.kc-titre Les accompagnateurs
+        p.kc-description
+          | 5 accompagnateurs, issus de la fabrique sociale de codeurs Simplon.VE, organisent les ateliers. Cet accompagnement individuel permet de guider au mieux l'enfant, lui donner les bases pour qu'il comprenne le fonctionnement et ose ainsi créer sa propre histoire.
+      .kc-bloc_image
+        img(src='images/icone-animat.svg', alt='Icone Accompagnateurs')
+         
+    .kc-footer
+      h1.kc-titre Besoin de plus d'informations
+      form(action='')
+        input(type='text')
+        textarea(name='infos', id='', cols='30', rows='10')
+         
+    script(src='js/hamburger.js')
