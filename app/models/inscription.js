@@ -16,7 +16,3 @@ var inscriptionSchema = new Schema({
 });
 
 var Inscription = mongoose.model('Inscription', inscriptionSchema);
-
-Inscription.find(function(err, inscrits) {
-    console.log(inscrits);
-});
