@@ -4,42 +4,40 @@ body
 
   include ./layouts/topnav
   
-  h3 Informations sur les inscrits et dates choisies
+  h3.kc-inscrits_title Informations sur les inscrits et dates choisies
   .atelier
-  ul
   each inscrit in inscrits
-    li
-      .enfant-info
-      |Identifiant de l'enfant : 
-      = inscrit.id 
-      br
-      |Nom de l'enfant : 
-      = inscrit.nom_enfant
-      br
-      |Prénom de l'enfant : 
-      = inscrit.prenom_enfant
-      br
-      |Age de l'enfant : 
-      = inscrit.age
-      br
-      .representant-info
-      |Nom du représenant légal : 
-      = inscrit.nom_representant
-      br
-      |Prénom du représentant légal : 
-      = inscrit.prenom_representant
-      br
-      |Mail : 
-      = inscrit.mail
-      br
-      |Téléphone : 
-      = inscrit.telephone
-      br
-      .choix
-      |Date(s) choisie(s) : 
-      = inscrit.date
-      br
-      |Autorisation photo : 
-      = inscrit.photo 
-      br
-      a(href="/delete/#{inscrit.id}") Désinscrire
+    .kc-inscrit
+      .kc-enfant-info
+        |Identifiant de l'enfant : 
+        = inscrit.id 
+        br
+        |Nom de l'enfant : 
+        = inscrit.nom_enfant
+        br
+        |Prénom de l'enfant : 
+        = inscrit.prenom_enfant
+        br
+        |Age de l'enfant : 
+        = inscrit.age
+        br
+      .kc-representant-info
+        |Nom du représenant légal : 
+        = inscrit.nom_representant
+        br
+        |Prénom du représentant légal : 
+        = inscrit.prenom_representant
+        br
+        |Mail : 
+        = inscrit.mail
+        br
+        |Téléphone : 
+        = inscrit.telephone
+        br
+      .kc-choix
+        |Date(s) choisie(s) : 
+        = inscrit.date
+        br
+        |Autorisation photo : 
+        = inscrit.photo 
+      a(href="/delete/#{inscrit.id}", class="kc-desinscription") Désinscrire

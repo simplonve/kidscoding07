@@ -1,15 +1,24 @@
-.enfant-info {
-	margin-bottom:2%; 
+.kc-inscrits_title {
+  margin-bottom: 5%;
+}
+.kc-inscrit {
+  display: block;
+  float: left;
+  width: 33.3333%;
 }
 
-.representant-info {
-	margin-bottom:2%; 
-}
+.kc-enfant-info, .kc-representant-info, .kc-choix { margin-bottom:2%;}
 
-.choix {
-	margin-bottom: 2%;
-}
-
-a {
-	margin-top: 2%;
+.kc-desinscription {
+	display: block;
+  width: 70%;
+  margin: 5% auto;
+  padding: 2.5%;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+  text-align: center;
+  border: solid 2px rgba(0,0,0,1);
 }
