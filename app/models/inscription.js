@@ -12,7 +12,7 @@ var inscriptionSchema = new Schema({
     mail : String,
     telephone : String,
     date : String,
-    photo : String,
+    photo : String
 });
 
 var Inscription = mongoose.model('Inscription', inscriptionSchema);

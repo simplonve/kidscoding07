@@ -1,6 +1,7 @@
 ul
   each inscrit in inscrits
     li
+      = inscrit.id
       = inscrit.nom_enfant
       = inscrit.prenom_enfant
       = inscrit.age
@@ -10,3 +11,4 @@ ul
       = inscrit.telephone
       = inscrit.date
       = inscrit.photo
+      a(href="/delete/#{inscrit.id}") Désinscrire

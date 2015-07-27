@@ -49,7 +49,7 @@ app.post('/inscription', function(req, res){
     date                : req.body.date,
     photo               : req.body.photo,
   }).save( function(err, inscription){
-    res.redirect( '/ateliers' );
+    res.redirect('/ateliers');
   });
 });
 
@@ -57,6 +57,11 @@ app.get('/ateliers', function(req, res){
   Inscription.find(function(err, inscrits) {
     res.render('ateliers', {inscrits : inscrits});
   });
+});
+
+app.delete('/delete/:inscrit_id', function(req, res){
+    Inscription.remove({__id: req.params.inscrit_id},
+    res.redirect('/ateliers'));
 });
 
 app.listen(3000);
