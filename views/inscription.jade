@@ -7,13 +7,13 @@ body
   .formulaire
     h2 Formulaire d'inscription :
     form(action='/inscription', method='post')
-      .renseignement
+      .renseignement-enfant
         h4 L'enfant : 
         label Nom
         input(type='text', name='nom_enfant')
         label Prénom
         input(type='text', name='prenom_enfant')
-        label Age (ans)
+        label Age  
         label 8
         input(type='radio', name='age', value='8')
         label 9
@@ -24,7 +24,8 @@ body
         input(type='radio', name='age', value='11')
         label 12
         input(type='radio', name='age', value='12')
-      .renseignement
+        |(ans)
+      .renseignement-representant
         h4 Le représentant légal :
         label Nom 
         input(type='text', name='nom_representant')
