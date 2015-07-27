@@ -1,0 +1,21 @@
+body {
+	width: 80%;
+	height: 800px;
+	margin: 2% 10%;
+}
+
+.enfant-info {
+	margin-bottom:2%; 
+}
+
+.representant-info {
+	margin-bottom:2%; 
+}
+
+.choix {
+	margin-bottom: 2%;
+}
+
+a {
+	margin-top: 2%;
+}
