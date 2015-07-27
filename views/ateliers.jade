@@ -1,14 +1,20 @@
-ul
-  each inscrit in inscrits
-    li
-      = inscrit.id
-      = inscrit.nom_enfant
-      = inscrit.prenom_enfant
-      = inscrit.age
-      = inscrit.nom_representant
-      = inscrit.prenom_representant
-      = inscrit.mail
-      = inscrit.telephone
-      = inscrit.date
-      = inscrit.photo
-      a(href="/delete/#{inscrit.id}") Désinscrire
+include ./layouts/head
+
+body
+
+  include ./layouts/topnav
+
+  ul
+    each inscrit in inscrits
+      li
+        = inscrit.id
+        = inscrit.nom_enfant
+        = inscrit.prenom_enfant
+        = inscrit.age
+        = inscrit.nom_representant
+        = inscrit.prenom_representant
+        = inscrit.mail
+        = inscrit.telephone
+        = inscrit.date
+        = inscrit.photo
+        a(href="/delete/#{inscrit.id}") Désinscrire
