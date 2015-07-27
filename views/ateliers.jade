@@ -5,16 +5,26 @@ body
   include ./layouts/topnav
 
   ul
-    each inscrit in inscrits
-      li
-        = inscrit.id
-        = inscrit.nom_enfant
-        = inscrit.prenom_enfant
-        = inscrit.age
-        = inscrit.nom_representant
-        = inscrit.prenom_representant
-        = inscrit.mail
-        = inscrit.telephone
-        = inscrit.date
-        = inscrit.photo
-        a(href="/delete/#{inscrit.id}") Désinscrire
+  each inscrit in inscrits
+    li
+      |Identifiant de l'enfant : 
+      = inscrit.id
+      |Nom de l'enfant : 
+      = inscrit.nom_enfant
+      |Prénom de l'enfant : 
+      = inscrit.prenom_enfant
+      |Age de l'enfant : 
+      = inscrit.age
+      |Nom du représenant légal : 
+      = inscrit.nom_representant
+      |Prénom du représentant légal : 
+      = inscrit.prenom_representant
+      |Mail : 
+      = inscrit.mail
+      |Téléphone : 
+      = inscrit.telephone
+      |Date(s) choisie(s) : 
+      = inscrit.date
+      |Autorisation photo : 
+      = inscrit.photo 
+      a(href="/delete/#{inscrit.id}") Désinscrire
