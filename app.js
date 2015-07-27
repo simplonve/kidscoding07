@@ -47,7 +47,7 @@ app.post('/inscription', function(req, res){
     mail                : req.body.mail,
     telephone           : req.body.telephone,
     date                : req.body.date,
-    photo               : req.body.photo,
+    photo               : req.body.photo
   }).save( function(err, inscription){
     res.redirect('/ateliers');
   });
@@ -59,6 +59,39 @@ app.get('/ateliers', function(req, res){
   });
 });
 
+app.get('/edit/:inscrit_id', function(req, res){
+  Inscription.findById(req.params.inscrit_id, function(err, inscrit){
+    res.render( 'edit', {
+      nom_enfant          : inscrit.nom_enfant,
+      prenom_enfant       : inscrit.prenom_enfant,
+      age                 : inscrit.age,
+      nom_representant    : inscrit.nom_representant,
+      prenom_representant : inscrit.prenom_representant,
+      mail                : inscrit.mail,
+      telephone           : inscrit.telephone,
+      date                : inscrit.date,
+      photo               : inscrit.photo
+    });
+  });
+});
+
+app.put('/edit/:inscrit_id', function(req, res){
+  Inscription.findById(req.params.inscrit_id, function(err, inscrit){
+    inscrit.nom_enfant          = req.body.nom_enfant;
+    inscrit.prenom_enfant       = req.body.prenom_enfant;
+    inscrit.age                 = req.body.age;
+    inscrit.nom_representant    = req.body.nom_representant;
+    inscrit.prenom_representant = req.body.prenom_representant;
+    inscrit.mail                = req.body.mail;
+    inscrit.telephone           = req.body.telephone;
+    inscrit.date                = req.body.date;
+    inscrit.photo               = req.body.photo;
+    inscrit.save(function(err, edit){
+      res.redirect('/ateliers');
+    });
+  });
+});
+
 app.get('/delete/:inscrit_id', function(req, res){
   Inscription.findById(req.params.inscrit_id, function(err, inscrit){
     inscrit.remove(function ( err, inscrit ){
@@ -66,5 +99,6 @@ app.get('/delete/:inscrit_id', function(req, res){
     });
   });
 });
+
 
 app.listen(3000);

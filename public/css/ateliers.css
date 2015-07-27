@@ -9,10 +9,11 @@
 
 .kc-enfant-info, .kc-representant-info, .kc-choix { margin-bottom:2%;}
 
-.kc-desinscription {
+.kc-edit, .kc-desinscription {
 	display: block;
-  width: 70%;
-  margin: 5% auto;
+  float: left;
+  width: 40%;
+  margin: 5%;
   padding: 2.5%;
   font-size: 1.1em;
   font-weight: 600;
