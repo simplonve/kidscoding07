@@ -96,8 +96,8 @@ body
     .kc-footer
       h1.kc-titre Besoin de plus d'informations
       form(action='/', method='post')
-        input(type='text', name='email')
-        textarea(name='question')
-        input(type='submit')
+        input(type='text', name='email', placeholder="Votre email")
+        textarea(name='question', placeholder="Votre message")
+        input(type='submit', value="Envoyer", class="kc-contact_submit")
          
     script(src='js/hamburger.js')
