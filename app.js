@@ -20,6 +20,7 @@ var Message = mongoose.model('Message')
 mongoose.connect('mongodb://localhost:27017/inscriptions');
 
 
+
 //Settings de l'app
 
 app.set('view engine', 'jade');
@@ -59,8 +60,13 @@ app.post('/inscription', function(req, res){
     telephone           : req.body.telephone,
     date                : req.body.date,
     photo               : req.body.photo
-  }).save( function(err, inscription){
-    res.redirect('/ateliers');
+  }).save(function(err){
+      if(!err) {
+          res.redirect('/ateliers');
+      } else {
+          console.log(err);
+          return response.send('ERROR');
+      }
   });
 });
 
@@ -121,7 +127,7 @@ app.get('/delete/:inscrit_id', function(req, res){
 
 app.get('/messages', function(req, res){
   Message.find(function(err, messages) {
-    res.render('messages', {messages : messages});
+    res.render('message', {messages : messages});
   });
 });
 
@@ -130,5 +136,9 @@ app.get('/admin', function(req, res){
     res.render('admin', {inscrits : inscrits});
   });
 });
+
+
+
+//Lancemant du serveur sur le port 3000 
 
 app.listen(3000);

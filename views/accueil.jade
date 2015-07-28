@@ -95,8 +95,9 @@ body
          
     .kc-footer
       h1.kc-titre Besoin de plus d'informations
-      form(action='')
-        input(type='text')
-        textarea(name='infos', id='', cols='30', rows='10')
+      form(action='/', method='post')
+        input(type='text', name='email')
+        textarea(name='question')
+        input(type='submit')
          
     script(src='js/hamburger.js')

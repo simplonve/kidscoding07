@@ -4,11 +4,12 @@ body
 
   include ./layouts/topnav
 
-  h3.kc-messages Messages reçus
-  each inscrit in inscrits
-    .kc-email
-      |Identifiant de l'enfant : 
-      = inscrit.id 
-    .kc-question
-      |Nom de l'enfant : 
-      = inscrit.nom_enfant
+  h3.kc-messages_title Messages reçus
+  each message in messages
+    .kc-message
+      .kc-email
+        |Email : 
+        = message.email 
+      .kc-question
+       |Question posée : 
+       = message.question
