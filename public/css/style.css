@@ -366,3 +366,8 @@ body {
 .kc-bloc:nth-child(odd) .kc-bloc_image img{
   left: -25%;
 }
+.kc-bloc:nth-child(6) .kc-bloc_image img{
+  bottom: -50%;
+  left: -25%;
+  width: 133%;
+}

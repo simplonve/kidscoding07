@@ -9,7 +9,7 @@ var inscriptionSchema = new Schema({
     prenom_representant : { type: String, required: true },
     mail : { type: String, required: true },
     telephone : { type: String, required: true },
-    date : { type: String, required: true },
+    date : { type: Array, required: true },
     photo : { type: String, required: true }
 });
 

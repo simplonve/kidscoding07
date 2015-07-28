@@ -66,7 +66,7 @@ app.post('/inscription', function(req, res){
     prenom_representant : req.body.prenom_representant,
     mail                : req.body.mail,
     telephone           : req.body.telephone,
-    date                : req.body.date,
+    date                : req.body.date.split(','),
     photo               : req.body.photo
   }).save(function(err){
       if(!err) {
@@ -80,13 +80,13 @@ app.post('/inscription', function(req, res){
 
 app.get('/ateliers', function(req, res){
   Inscription.find(function(err, inscrits) {
+    console.log(inscrits);
     res.render('admin', {inscrits : inscrits});
   });
 });
 
 app.get('/edit/:inscrit_id', function(req, res){
   Inscription.findById(req.params.inscrit_id, function(err, inscrit){
-    console.log(inscrit);
     res.render( 'edit', {
       id                  : inscrit.id,
       nom_enfant          : inscrit.nom_enfant,
