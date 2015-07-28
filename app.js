@@ -79,50 +79,50 @@ app.post('/inscription', function(req, res){
 });
 
 app.get('/ateliers', function(req, res){
-  var date1 = ["26-08"],
-      date2 = ["02-09"],
-      date3 = ["09-09"],
-      date4 = ["16-09"],
-      date5 = ["23-09"],
-      date6 = ["30-09"],
-      date7 = ["07-10"],
-      date8 = ["14-10"],
-      date9 = ["21-10"],
-      date10 = ["28-10"];
+  var date1 = ["26-08", []],
+      date2 = ["02-09", []],
+      date3 = ["09-09", []],
+      date4 = ["16-09", []],
+      date5 = ["23-09", []],
+      date6 = ["30-09", []],
+      date7 = ["07-10", []],
+      date8 = ["14-10", []],
+      date9 = ["21-10", []],
+      date10 = ["28-10", []];
 
   Inscription.find(function(err, inscrits) {
     inscrits.forEach(function(inscrit, i, arr){
       inscrit.date.forEach(function(date, i, arr){
         switch (date) {
           case "26-08":
-            date1.push(inscrit);
+            date1[1].push(inscrit);
             break;
           case "02-09":
-            date2.push(inscrit);
+            date2[1].push(inscrit);
             break;
           case "09-09":
-            date3.push(inscrit);
+            date3[1].push(inscrit);
             break;
           case "16-09":
-            date4.push(inscrit);
+            date4[1].push(inscrit);
             break;
           case "23-09":
-            date5.push(inscrit);
+            date5[1].push(inscrit);
             break;
           case "30-09":
-            date6.push(inscrit);
+            date6[1].push(inscrit);
             break;
           case "07-10":
-            date7.push(inscrit); 
+            date7[1].push(inscrit); 
             break;
           case "14-10":
-            date8.push(inscrit); 
+            date8[1].push(inscrit); 
             break;
           case "21-10":
-            date9.push(inscrit); 
+            date9[1].push(inscrit); 
             break;
           case "28-10":
-            date10.push(inscrit); 
+            date10[1].push(inscrit); 
             break;
           default:
             console.log("Désolé, date introuvable!");
@@ -130,6 +130,7 @@ app.get('/ateliers', function(req, res){
       });
     });
     var date = [date1, date2, date3, date4, date5, date6, date7, date8, date9, date10];
+    console.log(date);
     res.render('ateliers', {date : date});
   });
 });

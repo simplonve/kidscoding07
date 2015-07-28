@@ -6,8 +6,12 @@ body
   
   h3.kc-inscrits_title Informations sur les inscrits et dates choisies
   .atelier
-    .kc-date_cours
-      each cours in date
-        h3 #{cours[0]}
-        = cours[1].nom_enfant
+    each seance in date
+      .kc-date_cours
+        h3 #{seance[0]}
+        .kc-inscrit
+          each enfant in seance[1]
+            .kc-enfant-info
+              = enfant.nom_enfant
+              = enfant.prenom_enfant
         
