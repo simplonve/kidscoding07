@@ -1,0 +1,14 @@
+include ./layouts/head
+
+body
+
+  include ./layouts/topnav
+
+  h3.kc-messages Messages reçus
+  each inscrit in inscrits
+    .kc-email
+      |Identifiant de l'enfant : 
+      = inscrit.id 
+    .kc-question
+      |Nom de l'enfant : 
+      = inscrit.nom_enfant
