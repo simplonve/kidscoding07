@@ -4,14 +4,15 @@ body
 
   include ./layouts/topnav
   
-  h3.kc-inscrits_title Informations sur les inscrits et dates choisies
+  h3.kc-inscrits_title Calendrier des ateliers KidsCoding07
   .atelier
     each seance in date
-      .kc-date_cours
+      .kc-date_atelier
         h3 #{seance[0]}
-        .kc-inscrit
+        .kc-atelier_inscrits
           each enfant in seance[1]
-            .kc-enfant-info
-              = enfant.nom_enfant
+            .kc-atelier_enfant
+              = enfant.nom_enfant.charAt(0)
+              | . 
               = enfant.prenom_enfant
         

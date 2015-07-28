@@ -447,8 +447,16 @@ body {
   background-color: rgba(255,255,255,0.15);
 }
 
-.kc-date_cours {
+.kc-date_atelier {
   display: block;
   float: left;
   width: 10%;
+}
+.kc-atelier_inscrits {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.kc-atelier_enfant {
+  margin-bottom: 5%;
 }

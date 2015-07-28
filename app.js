@@ -79,16 +79,16 @@ app.post('/inscription', function(req, res){
 });
 
 app.get('/ateliers', function(req, res){
-  var date1 = ["26-08", []],
-      date2 = ["02-09", []],
-      date3 = ["09-09", []],
-      date4 = ["16-09", []],
-      date5 = ["23-09", []],
-      date6 = ["30-09", []],
-      date7 = ["07-10", []],
-      date8 = ["14-10", []],
-      date9 = ["21-10", []],
-      date10 = ["28-10", []];
+  var date1 = ["26 Août", []],
+      date2 = ["2 Septembre", []],
+      date3 = ["9 Septembre", []],
+      date4 = ["16 Septembre", []],
+      date5 = ["23 Septembre", []],
+      date6 = ["30 Septembre", []],
+      date7 = ["7 Octobre", []],
+      date8 = ["14 Octobre", []],
+      date9 = ["21 Octobre", []],
+      date10 = ["28 Octobre", []];
 
   Inscription.find(function(err, inscrits) {
     inscrits.forEach(function(inscrit, i, arr){
@@ -130,7 +130,6 @@ app.get('/ateliers', function(req, res){
       });
     });
     var date = [date1, date2, date3, date4, date5, date6, date7, date8, date9, date10];
-    console.log(date);
     res.render('ateliers', {date : date});
   });
 });
@@ -166,7 +165,7 @@ app.post('/edit/:inscrit_id', function(req, res){
 
         return inscrit.save(function(err){
             if(!err) {
-                res.redirect('/ateliers');
+                res.redirect('/admin');
             } else {
                 console.log(err);
                 return response.send('ERROR');
@@ -178,7 +177,7 @@ app.post('/edit/:inscrit_id', function(req, res){
 app.get('/delete/:inscrit_id', function(req, res){
   Inscription.findById(req.params.inscrit_id, function(err, inscrit){
     inscrit.remove(function(err){
-      res.redirect('/ateliers');
+      res.redirect('/admin');
     });
   });
 });
