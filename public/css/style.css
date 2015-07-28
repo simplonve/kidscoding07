@@ -272,6 +272,9 @@ body {
   display: block;
   width: 66%;
 }
+.kc-detail:nth-child(1) .kc-circle img {
+  transform: translateY(-15%);
+}
 .kc-detail:nth-child(2) .kc-circle img {
   transform: translateY(-15%);
 }
