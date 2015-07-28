@@ -363,3 +363,25 @@ body {
 .kc-bloc:nth-child(odd) .kc-bloc_image img{
   left: -25%;
 }
+.kc-footer {
+  width: 100%;
+  height: 150px;
+}
+.kc-footer h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.kc-footer form{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.kc-footer input {
+  
+}
+.kc-footer textarea {
+
+}
+.kc-contact_submit {
+
+}
