@@ -6,7 +6,7 @@ body
 
   .formulaire
     h2 Formulaire d'inscription :
-    form(action='/inscription', method='post')
+    form(action="/edit/#{id}", method='post')
       .renseignement-enfant
         h4 L'enfant : 
         label Nom
@@ -15,15 +15,15 @@ body
         input(type='text', name='prenom_enfant', value="#{prenom_enfant}")
         label Age  
         label 8
-        input(type='radio', name='age', value='8')
+        input(type='radio', name='age', value='8', checked=(age=='8' ? "checked" : undefined))
         label 9
-        input(type='radio', name='age', value='9')
+        input(type='radio', name='age', value='9', checked=(age=='9' ? "checked" : undefined))
         label 10
-        input(type='radio', name='age', value='10')
+        input(type='radio', name='age', value='10', checked=(age=='10' ? "checked" : undefined))
         label 11
-        input(type='radio', name='age', value='11')
+        input(type='radio', name='age', value='11', checked=(age=='11' ? "checked" : undefined))
         label 12
-        input(type='radio', name='age', value='12')
+        input(type='radio', name='age', value='12', checked=(age=='12' ? "checked" : undefined))
         |(ans)
       .renseignement-representant
         h4 Le représentant légal :
@@ -39,33 +39,33 @@ body
         h4 Choisissez vos mercredis :
         p Aout :
         label 26
-        input(type='checkbox', name='date', value='26-08')
+        input(type='checkbox', name='date', value='26-08', checked=(date.search("26-08") != -1 ? "checked" : undefined))
         p Septembre :
         label 2
-        input(type='checkbox', name='date', value='02-09')
+        input(type='checkbox', name='date', value='02-09', checked=(date.search("02-09") != -1 ? "checked" : undefined))
         label 9
-        input(type='checkbox', name='date', value='09-09')
+        input(type='checkbox', name='date', value='09-09', checked=(date.search("09-09") != -1 ? "checked" : undefined))
         label 16
-        input(type='checkbox', name='date', value='16-09')
+        input(type='checkbox', name='date', value='16-09', checked=(date.search("16-09") != -1 ? "checked" : undefined))
         label 23
-        input(type='checkbox', name='date', value='23-09')
+        input(type='checkbox', name='date', value='23-09', checked=(date.search("23-09") != -1 ? "checked" : undefined))
         label 30
-        input(type='checkbox', name='date', value='30-09')
+        input(type='checkbox', name='date', value='30-09', checked=(date.search("30-09") != -1 ? "checked" : undefined))
         br
         p Octobre : 
         label 7
-        input(type='checkbox', name='date', value='07-10')
+        input(type='checkbox', name='date', value='07-10', checked=(date.search("07-10") != -1 ? "checked" : undefined))
         label 14
-        input(type='checkbox', name='date', value='14-10')
+        input(type='checkbox', name='date', value='14-10', checked=(date.search("14-10") != -1 ? "checked" : undefined))
         label 21
-        input(type='checkbox', name='date', value='21-10')
+        input(type='checkbox', name='date', value='21-10', checked=(date.search("21-10") != -1 ? "checked" : undefined))
         label 28
-        input(type='checkbox', name='date', value='28-10')
+        input(type='checkbox', name='date', value='28-10', checked=(date.search("28-10") != -1 ? "checked" : undefined))
       .photo
         h4 Photographie : 
         p
           | J'autorise le Kidscoding07 à prendre et à publier des photos de mon enfant : Oui :
-          input(type='radio', name='photo', value='Oui', checked='')
+          input(type='radio', name='photo', value='Oui', checked=(photo=='Oui' ? "checked" : undefined))
           | Non : 
-          input(type='radio', name='photo', value='Non')
+          input(type='radio', name='photo', value='Non', checked=(photo=='Non' ? "checked" : undefined))
       input.bouton(type='submit', value='Envoyer')
