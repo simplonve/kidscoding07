@@ -199,16 +199,13 @@ body {
   display: block;
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
   color: rgba(255,255,255,1);
-  transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
 }
 .kc-accroche h1 {
-  font-size: 2em;
+  font-size: 3em;
 }
 .kc-inscription {
   display: block;
@@ -225,8 +222,8 @@ body {
 .kc-inscription p {
   display: block;
   width: 100%;
-  margin-bottom: 7.5%;
-  font-size: 1.25em;
+  margin-bottom: 5%;
+  font-size: 1.75em;
   color: rgba(255,255,255,1);
 }
 .kc-inscription a {
@@ -234,12 +231,21 @@ body {
   width: 70%;
   margin: 5% auto;
   padding: 2.5%;
-  font-size: 1.1em;
+  font-size: 1.33em;
   font-weight: 600;
   letter-spacing: 0.5px;
   color: rgba(255,255,255,1);
   text-decoration: none;
+  background-color: transparent;
   border: solid 2px rgba(255,255,255,1);
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.kc-inscription a:hover {
+  background-color: rgba(255,255,255,0.15);
 }
 .kc-infos {
   display: flex;
@@ -333,9 +339,6 @@ body {
   margin-top: 10%;
   padding-left: 5%;
   font-size: 1.75em;
-}
-.kc-description a {
-  color: rgba(0, 0, 0, 0.87);
 }
 .kc-bloc_image {
   display: block;
