@@ -241,16 +241,14 @@ body {
   text-decoration: none;
   border: solid 2px rgba(255,255,255,1);
 }
-.kc-infos, .kc-bloc {
-  display: block;
+.kc-infos {
+  display: flex;
   position: relative;
   float: left;
   width: 100%;
   height: 75%;
+  align-items: center;
 }
-
-.bloc-rouge{ background-color: #FF5555;}
-
 .kc-detail {
   display: flex;
   float: left;
@@ -258,4 +256,107 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.kc-circle {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  height: 225px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #77C7CA;
+  border-radius: 100%;
+  text-align: center;
+}
+.kc-circle img {
+  display: block;
+  width: 66%;
+}
+.kc-detail:nth-child(2) .kc-circle img {
+  transform: translateY(-15%);
+}
+.kc-circle p {
+  display: block;
+  margin-top: -20%;
+  font-size: 1.25em;
+  line-height: 0.75em;
+  font-weight: 600;
+}
+.kc-detail>p {
+  display: block;
+  margin: 5% 0;
+  font-size: 1.5em;
+}
+.kc-bloc {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.bloc-rouge{ background-color: #FF5555;}
+
+.kc-bloc_text {
+  display: block;
+  width: 60%;
+  height: 100%;
+}
+.kc-bloc_text a {
+  color: #ff5555;
+  text-decoration: none;
+}
+.kc-bloc:nth-child(even) .kc-bloc_text{
+  float: right;
+}
+.kc-bloc:nth-child(odd) .kc-bloc_text{
+  float: left;
+  color: #fff;
+}
+.kc-titre {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 15%;
+  padding-left: 5%;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+.kc-description {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 10%;
+  padding-left: 5%;
+  font-size: 1.75em;
+}
+.kc-description a {
+  color: rgba(0, 0, 0, 0.87);
+}
+.kc-bloc_image {
+  display: block;
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.kc-bloc_image img {
+  display: block;
+  position: absolute;
+  bottom: -25%;
+  width: 200%;
+}
+.kc-bloc:nth-child(even) .kc-bloc_image{
+  float: left;
+  transform: rotateZ(15deg);
+}
+.kc-bloc:nth-child(even) .kc-bloc_image img{
+  left: -50%;
+}
+.kc-bloc:nth-child(odd) .kc-bloc_image{
+  float: right;
+  transform: rotateZ(-15deg);
+}
+.kc-bloc:nth-child(odd) .kc-bloc_image img{
+  left: -25%;
 }

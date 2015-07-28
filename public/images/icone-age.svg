@@ -1,20 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg id="svg7367" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="25mm" width="26mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 92.125935 88.58263">
- <metadata id="metadata7372">
-  <rdf:RDF>
-   <cc:Work rdf:about="">
-    <dc:format>image/svg+xml</dc:format>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title/>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <g id="layer1" transform="translate(0 -963.78)">
-  <ellipse id="path4148" rx="38.065" ry="41.401" cy="1044.7" cx="49.147"/>
-  <ellipse id="path4150" rx="20.09" ry="19.872" cy="992.25" cx="49.147"/>
-  <ellipse id="path4150-71" rx="15.753" ry="17.463" cy="994.06" cx="49.147" fill="#fff"/>
-  <ellipse id="path4148-1" rx="32.765" ry="31.282" cy="1037.4" cx="49.147" fill="#fff"/>
-  <rect id="rect4478" height="2.891" width="64.566" y="1049.5" x="15.901"/>
- </g>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg7367"
+   height="177"
+   viewBox="0 0 176.99991 176.99991"
+   width="177"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="icone-age.svg">
+  <defs
+     id="defs4399" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1535"
+     inkscape:window-height="876"
+     id="namedview4397"
+     showgrid="false"
+     inkscape:zoom="2.4579294"
+     inkscape:cx="103.96672"
+     inkscape:cy="59.972376"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7367"
+     units="px" />
+  <metadata
+     id="metadata7372">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="matrix(1.4829331,0,0,1.4227433,15.499167,-1319.5864)">
+    <ellipse
+       id="path4148"
+       cy="1044.7"
+       cx="49.146999"
+       rx="38.064999"
+       ry="41.401001" />
+    <ellipse
+       id="path4150"
+       cy="992.25"
+       cx="49.146999"
+       rx="20.09"
+       ry="19.872" />
+    <ellipse
+       id="path4150-71"
+       rx="15.753"
+       ry="17.462999"
+       cy="994.06"
+       cx="49.146999"
+       style="fill:#ffffff" />
+    <ellipse
+       id="path4148-1"
+       rx="32.764999"
+       ry="31.282"
+       cy="1037.4"
+       cx="49.146999"
+       style="fill:#ffffff" />
+    <rect
+       id="rect4478"
+       y="1049.5"
+       width="64.566002"
+       x="15.901"
+       height="2.891" />
+  </g>
 </svg>

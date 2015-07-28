@@ -8,6 +8,13 @@ var app = express();
 
 
 
+// Node Mailer
+
+var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport();
+
+
+
 // Appel des modèles de l'app
 
 fs.readdirSync(__dirname + '/app/models').forEach(function (file) {
@@ -37,12 +44,13 @@ app.get('/', function(req, res){
 });
 
 app.post('/', function(req, res){
-  new Message({
-    email          : req.body.email,
-    question       : req.body.question
-  }).save( function(err, message){
-    res.redirect('/');
+  transporter.sendMail({
+    from: req.body.email,
+    to: 'kidscoding07@gmail.com',
+    subject: 'Question à propos de KidsCoding.',
+    text: req.body.question
   });
+  res.redirect('/');
 });
 
 app.get('/inscription', function(req, res){
