@@ -21,7 +21,6 @@ fs.readdirSync(__dirname + '/app/models').forEach(function (file) {
   if (~file.indexOf('.js')) require(__dirname + '/app/models/' + file);
 });
 var Inscription = mongoose.model('Inscription')
-var Message = mongoose.model('Message')
 
 
 mongoose.connect('mongodb://localhost:27017/inscriptions');
