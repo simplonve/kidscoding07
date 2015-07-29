@@ -68,4 +68,6 @@ body
           input(type='radio', name='photo', value='Oui', checked='')
           | Non : 
           input(type='radio', name='photo', value='Non')
-      input.bouton(type='submit', value='Envoyer')
+      .kc-form_action
+        a.bouton.inscription_annuler(href='/') Annuler
+        input.bouton.inscription_valider(type='submit', value='Envoyer')
