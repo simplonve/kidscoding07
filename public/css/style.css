@@ -402,8 +402,12 @@ body {
   width: 60%;
   height: 100%;
 }
-.kc-bloc_text a {
+.link_scratch {
   color: #ff5555;
+  text-decoration: none;
+}
+.link_simplon {
+  color: rgba(0,0,0,0.87);
   text-decoration: none;
 }
 .kc-bloc:nth-child(even) .kc-bloc_text{
@@ -428,6 +432,7 @@ body {
   width: 100%;
   margin-top: 10%;
   padding-left: 5%;
+  padding-right: 15%;
   font-size: 1.75em;
 }
 .kc-bloc_image {

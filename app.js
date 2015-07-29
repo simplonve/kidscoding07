@@ -182,12 +182,6 @@ app.get('/delete/:inscrit_id', function(req, res){
   });
 });
 
-app.get('/messages', function(req, res){
-  Message.find(function(err, messages) {
-    res.render('message', {messages : messages});
-  });
-});
-
 app.get('/admin', function(req, res){
   Inscription.find(function(err, inscrits) {
     res.render('admin', {inscrits : inscrits});

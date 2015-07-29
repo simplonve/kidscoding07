@@ -1,5 +1,10 @@
 .kc-inscrits_title {
-  margin-bottom: 5%;
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 5% 0 2.5% 0;
+  text-align: center;
+  font-size: 2em;
 }
 .kc-inscrit {
   display: block;
