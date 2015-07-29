@@ -3,10 +3,13 @@ var mongoose = require('mongoose');
 var bodyParser = require("body-parser");
 var fs = require('fs');
 var path = require('path');
+var http = require ('http');
 
 var app = express();
 
 
+var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost:27017/inscriptions';
+var theport = process.env.PORT || 3000;
 
 // Node Mailer
 
@@ -23,7 +26,13 @@ fs.readdirSync(__dirname + '/app/models').forEach(function (file) {
 var Inscription = mongoose.model('Inscription')
 
 
-mongoose.connect('mongodb://localhost:27017/inscriptions');
+mongoose.connect(uristring, function (err, res) {
+  if (err) {
+  console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+  } else {
+  console.log ('Succeeded connected to: ' + uristring);
+  }
+});
 
 
 
@@ -191,4 +200,4 @@ app.get('/admin', function(req, res){
 
 //Lancemant du serveur sur le port 3000 
 
-app.listen(3000);
+app.listen(theport);
