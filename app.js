@@ -200,4 +200,6 @@ app.get('/admin', function(req, res){
 
 //Lancemant du serveur sur le port 3000 
 
-app.listen(theport);
+app.listen(theport, function() {
+    console.log('Our app is running on');
+});
