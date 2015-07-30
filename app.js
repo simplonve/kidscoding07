@@ -184,15 +184,15 @@ app.post('/edit/:inscrit_id', function(req, res){
 
 app.get('/delete/:inscrit_id', function(req, res){
   Inscription.findById(req.params.inscrit_id, function(err, inscrit){
-    inscrit.remove(function(err){
-      res.redirect('/admin');
-    });
+    console.log(req.params);
+    
   });
 });
 
-app.get('/admin', function(req, res){
+app.get('/kidsaccompagnateur', function(req, res){
   Inscription.find(function(err, inscrits) {
     res.render('admin', {inscrits : inscrits});
+    console.log(inscrits);
   });
 });
 
@@ -200,6 +200,4 @@ app.get('/admin', function(req, res){
 
 //Lancemant du serveur sur le port 3000 
 
-app.listen(theport, function() {
-    console.log('Our app is running on');
-});
+app.listen(theport);
