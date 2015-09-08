@@ -81,7 +81,7 @@ app.post('/inscription', function(req, res){
           res.redirect('/ateliers');
       } else {
           console.log(err);
-          return response.send('ERROR');
+          res.redirect('/inscription');
       }
   });
 });
