@@ -184,8 +184,9 @@ app.post('/edit/:inscrit_id', function(req, res){
 
 app.get('/delete/:inscrit_id', function(req, res){
   Inscription.findById(req.params.inscrit_id, function(err, inscrit){
-    console.log(req.params);
-    
+    inscrit.remove(function(err){
+      res.redirect('/kidsaccompagnateur');
+    });
   });
 });
 
