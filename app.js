@@ -65,26 +65,26 @@ app.get('/inscription', function(req, res){
   res.render('inscription');
 });
 
-app.post('/inscription', function(req, res){
-  new Inscription({
-    nom_enfant          : req.body.nom_enfant,
-    prenom_enfant       : req.body.prenom_enfant,
-    age                 : req.body.age,
-    nom_representant    : req.body.nom_representant,
-    prenom_representant : req.body.prenom_representant,
-    mail                : req.body.mail,
-    telephone           : req.body.telephone,
-    date                : req.body.date,
-    photo               : req.body.photo
-  }).save(function(err){
-      if(!err) {
-          res.redirect('/ateliers');
-      } else {
-          console.log(err);
-          res.redirect('/inscription');
-      }
-  });
-});
+// app.post('/inscription', function(req, res){
+//   new Inscription({
+//     nom_enfant          : req.body.nom_enfant,
+//     prenom_enfant       : req.body.prenom_enfant,
+//     age                 : req.body.age,
+//     nom_representant    : req.body.nom_representant,
+//     prenom_representant : req.body.prenom_representant,
+//     mail                : req.body.mail,
+//     telephone           : req.body.telephone,
+//     date                : req.body.date,
+//     photo               : req.body.photo
+//   }).save(function(err){
+//       if(!err) {
+//           res.redirect('/ateliers');
+//       } else {
+//           console.log(err);
+//           res.redirect('/inscription');
+//       }
+//   });
+// });
 
 app.get('/ateliers', function(req, res){
   var date1 = ["26 Août", []],
